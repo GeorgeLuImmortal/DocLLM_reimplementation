@@ -36,7 +36,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code = True, 
 model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code = True).to(device)
 
 input_str = "公司:byd\n产品:极氪001"
-## one poly corresponding to a token id while [-1,-1,-1,-1] represents masked poly
+## one poly corresponding to a token id while [-1,-1,-1,-1] represents masked poly, corresponding to "\n" in this example
 input_poly = [
   [0.1749,0.1466,0.5317,0.5486],
   [0.1749,0.1466,0.5317,0.5486],
