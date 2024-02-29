@@ -21,3 +21,33 @@ We test the performance of fine-tuned DocLLM_baichuan2_7b on the in-house KIE da
 | ------------- | ------------- |
 | DocLLM\_baichuan2\_7b  | 76.75  |
 | baichuan2\_7b | 74.95  |
+
+# Quick start
+
+```python
+
+input_str = "公司:byd\n产品:极氪001"
+## one poly corresponding to a token id while [-1,-1,-1,-1] represents masked poly
+input_poly = [
+  [0.1749,0.1466,0.5317,0.5486],
+  [0.1749,0.1466,0.5317,0.5486],
+  [0.1749,0.1466,0.5317,0.5486],
+  [0.1749,0.1466,0.5317,0.5486],
+  [-1,-1,-1,-1],
+  [0.6545,0.2287,0.8743,0.4666],
+  [0.6545,0.2287,0.8743,0.4666],
+  [0.6545,0.2287,0.8743,0.4666],
+  [0.6545,0.2287,0.8743,0.4666],
+  [0.6545,0.2287,0.8743,0.4666],
+  [0.6545,0.2287,0.8743,0.4666],
+  [0.6545,0.2287,0.8743,0.4666]
+  ]
+
+input_ids = tokenizer.encode(input_str)
+input_ids = torch.as_tensor(input_ids, dtype=torch.int64)
+input_coordinates = torch.as_tensor(input_poly)
+
+output = model(
+    input_ids=input_ids.unsqueeze(0).to(device), 
+    input_coordinates=input_coordinates.unsqueeze(0).to(device),
+    )
