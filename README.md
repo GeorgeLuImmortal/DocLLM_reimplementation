@@ -11,3 +11,7 @@ The re-implemented model architecture is availabled at
 https://huggingface.co/JinghuiLuAstronaut/DocLLM_baichuan2_7b
 
 **Note that this is an re-implementation of model architecture, all newly added parameters are random initialized, you can download the model and continue pre-training or fine-tuning.**
+
+# Performance
+
+We test the performance of fine-tuned DocLLM_baichuan2_7b on the in-house KIE dataset
