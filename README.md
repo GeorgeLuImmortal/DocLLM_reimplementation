@@ -26,6 +26,15 @@ We test the performance of fine-tuned DocLLM_baichuan2_7b on the in-house KIE da
 
 ```python
 
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoModelForCausalLM
+import torch
+
+# Load tokenizer and model
+device = "cuda:0"
+model_path = "model_path"
+tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code = True, padding_side = 'left')
+model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code = True).to(device)
+
 input_str = "公司:byd\n产品:极氪001"
 ## one poly corresponding to a token id while [-1,-1,-1,-1] represents masked poly
 input_poly = [
