@@ -5,7 +5,7 @@ FOR MULTIMODAL DOCUMENT UNDERSTANDING](https://arxiv.org/pdf/2401.00908.pdf)
 
 # Model architecture
 
-We re-implement the model architecture based on baichuan2-7b instead (paper uses llama2-7b since they focus on English data)
+We re-implement the model architecture based on baichuan2-7b instead (paper uses llama2-7b since they focus on English data), model size 7.5B -> 9.1B
 
 The re-implemented model architecture is availabled at 
 https://huggingface.co/JinghuiLuAstronaut/DocLLM_baichuan2_7b
