@@ -14,4 +14,10 @@ https://huggingface.co/JinghuiLuAstronaut/DocLLM_baichuan2_7b
 
 # Performance
 
-We test the performance of fine-tuned DocLLM_baichuan2_7b on the in-house KIE dataset
+We test the performance of fine-tuned DocLLM_baichuan2_7b on the in-house KIE dataset, demonstrating that though without pre-training, it still achieves improvement.
+
+
+| Model  | F-score |
+| ------------- | ------------- |
+| DocLLM\_baichuan2\_7b  | 76.75  |
+| baichuan2\_7b | 74.95  |
