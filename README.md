@@ -1,7 +1,7 @@
 # DocLLM_reimplementation
 
 This repository is the reimplemantion of [DOCLLM: A LAYOUT-AWARE GENERATIVE LANGUAGE MODEL
-FOR MULTIMODAL DOCUMENT UNDERSTANDING](https://arxiv.org/abs/2402.04838) 
+FOR MULTIMODAL DOCUMENT UNDERSTANDING](https://arxiv.org/pdf/2401.00908.pdf) 
 
 # Model architecture
 
