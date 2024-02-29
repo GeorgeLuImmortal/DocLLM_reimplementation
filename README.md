@@ -10,4 +10,4 @@ We re-implement the model architecture based on baichuan2-7b instead (paper uses
 The re-implemented model architecture is availabled at 
 https://huggingface.co/JinghuiLuAstronaut/DocLLM_baichuan2_7b
 
-**Since this is an re-implementation of model architecture, all newly added parameters are random initialized, you can download the model and continue pre-training or fine-tuning.**
+**Note that this is an re-implementation of model architecture, all newly added parameters are random initialized, you can download the model and continue pre-training or fine-tuning.**
