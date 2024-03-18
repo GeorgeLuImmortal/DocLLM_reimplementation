@@ -12,6 +12,8 @@ https://huggingface.co/JinghuiLuAstronaut/DocLLM_baichuan2_7b
 
 **Note that this is an re-implementation of model architecture, all newly added parameters are random initialized, you can download the model and continue pre-training or fine-tuning.**
 
+**The inference code is available at readme.md (you can extend that code to perform training as well), model architectures are available at modeling_baichuan.py when you download the huggingface model.**
+
 # Performance
 
 We test the performance of fine-tuned DocLLM_baichuan2_7b on the in-house KIE dataset, demonstrating that though without pre-training, it still achieves improvement.
